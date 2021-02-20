@@ -20,10 +20,12 @@ class PopViewController: UIViewController {
         return label
     }()
     
-    let container: UIView = {
+    lazy var container: UIView = {
         let view = UIView()
         view.backgroundColor = .systemPink
         view.layer.cornerRadius = 6
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(setImage))
+        view.addGestureRecognizer(tapRecognizer)
         return view
     }()
     
@@ -50,12 +52,12 @@ class PopViewController: UIViewController {
 
     // MARK: - Configure
     func configureUI() {
+        view.backgroundColor = .white
+        
         view.addSubview(paticleView)
         view.addSubview(container)
         container.addSubview(myLabel)
         
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(setImage))
-        container.addGestureRecognizer(tapRecognizer)
         
         [paticleView, container, myLabel].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false

@@ -15,6 +15,8 @@
 		F68856F725DC0F6A007FD0C4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68856F425DC0F6A007FD0C4 /* Coordinator.swift */; };
 		F68856F825DC0F6A007FD0C4 /* PopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68856F525DC0F6A007FD0C4 /* PopViewController.swift */; };
 		F68856FB25DC11F9007FD0C4 /* Paticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = F68856FA25DC11F9007FD0C4 /* Paticle.sks */; };
+		F688572225DFAE71007FD0C4 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F688572125DFAE71007FD0C4 /* DetailedViewController.swift */; };
+		F688572525DFAFA6007FD0C4 /* Magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = F688572425DFAFA6007FD0C4 /* Magic.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F68856F425DC0F6A007FD0C4 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F68856F525DC0F6A007FD0C4 /* PopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopViewController.swift; sourceTree = "<group>"; };
 		F68856FA25DC11F9007FD0C4 /* Paticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Paticle.sks; sourceTree = "<group>"; };
+		F688572125DFAE71007FD0C4 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		F688572425DFAFA6007FD0C4 /* Magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Magic.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +69,12 @@
 				F68856F425DC0F6A007FD0C4 /* Coordinator.swift */,
 				F68856EA25DC0F3A007FD0C4 /* Info.plist */,
 				F68856FA25DC11F9007FD0C4 /* Paticle.sks */,
+				F688572425DFAFA6007FD0C4 /* Magic.sks */,
 				F68856F525DC0F6A007FD0C4 /* PopViewController.swift */,
 				F68856F325DC0F6A007FD0C4 /* RootViewController.swift */,
 				F68856DE25DC0F39007FD0C4 /* SceneDelegate.swift */,
 				F68856E025DC0F39007FD0C4 /* ViewController.swift */,
+				F688572125DFAE71007FD0C4 /* DetailedViewController.swift */,
 			);
 			path = Tutorial_SpriteKit;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F68856FB25DC11F9007FD0C4 /* Paticle.sks in Resources */,
+				F688572525DFAFA6007FD0C4 /* Magic.sks in Resources */,
 				F68856E625DC0F3A007FD0C4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F688572225DFAE71007FD0C4 /* DetailedViewController.swift in Sources */,
 				F68856E125DC0F39007FD0C4 /* ViewController.swift in Sources */,
 				F68856DD25DC0F39007FD0C4 /* AppDelegate.swift in Sources */,
 				F68856F825DC0F6A007FD0C4 /* PopViewController.swift in Sources */,

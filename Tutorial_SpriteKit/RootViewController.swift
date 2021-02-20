@@ -12,6 +12,7 @@ class RootViewController: UIViewController {
     lazy var popButton: UIButton = {
         let button = UIButton()
         button.setTitle("Pop", for: .normal)
+        button.setTitleColor(.black, for: .normal)
         button.addTarget(self, action: #selector(mainToPopView), for: .touchUpInside)
         return button
     }()
@@ -19,8 +20,8 @@ class RootViewController: UIViewController {
     lazy var detailedPopButton: UIButton = {
         let button = UIButton()
         button.setTitle("DetailedPop", for: .normal)
-        button.setTitleColor(.gray, for: .normal)
-        button.addTarget(self, action: #selector(mainToPopView), for: .touchUpInside)
+        button.setTitleColor(.black, for: .normal)
+        button.addTarget(self, action: #selector(mainToDetailedPopView), for: .touchUpInside)
         return button
     }()
     
@@ -41,7 +42,7 @@ class RootViewController: UIViewController {
     
     // MARK: - Configure
     func configureUI() {
-        view.backgroundColor = .black
+        view.backgroundColor = .white
         
         view.addSubview(buttonStack)
         buttonStack.translatesAutoresizingMaskIntoConstraints = false
@@ -57,7 +58,8 @@ class RootViewController: UIViewController {
     }
 
     @objc func mainToDetailedPopView() {
-        
+        let vc = DetailedViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 
